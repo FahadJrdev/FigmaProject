@@ -1,0 +1,177 @@
+/* :root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+    --primary-color: #00a87c;
+    --secondary-color: #004d40;
+    --bg-primary-color: #fff;
+    --bg-secondary-color: #e6e6e6;
+    --bg-color-black: #121212;
+    --text-color: #121212;
+    --text-color-white: #ffffff;
+    --text-color-grey: #e6e6e6;
+    --border-color: #f2f2f2;
+    --box-shadow-inset-color: rgba(0, 0, 0, 0.12);
+    --box-shadow-color: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --overlay-color: rgba(0, 0, 0, 0.6);
+} */
+
+.theme-light {
+    --font-color-primary: #707585;
+    --font-color-secondary: #b3b6bc;
+    --background-body: #eef0f6;
+    --title-font-color: #2f384e;
+    --box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.07), -4px -4px 13px #fff, 6px 6px 36px rgba(0, 0, 0, 0.06);
+    --box-shadow-inset: -4px -4px 16px rgba(255, 255, 255, 0.25), 4px 4px 8px rgba(66, 83, 107, 0.09), inset 0 -4px 14px #fff, inset 0 2px 6px rgba(66, 83, 107, 0.22);
+    --box-shadow-simle: 2px 2px 16px rgba(33, 36, 49, 0.16);
+    --button-bg: #eef0f6;
+    --button-bg-hover: #f6f7fc;
+    --element-border-color: #eef0f6;
+    --border-color: rgba(209, 217, 230, 0.9);
+}
+
+.theme-dark {
+    --font-color-primary: #b3b6bc;
+    --font-color-secondary: #2a2c2d;
+    --background-body: #20242f;
+    --title-font-color: #b3b6bc;
+    --box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.24), -4px -4px 13px #333646, 6px 6px 36px rgba(0, 0, 0, 0.23);
+    --box-shadow-inset: -2px -2px 4px rgba(64, 67, 84, 0.2), 2px 2px 4px rgba(0, 0, 0, 0.08), inset 0 -2px 6px rgba(66, 69, 84, 0.8), inset 0 2px 8px rgba(0, 0, 0, 0.4);
+    --box-shadow-simle: 2px 2px 16px rgba(0, 0, 0, 0.48);
+    --button-bg: #20242f;
+    --button-bg-hover: #282d3a;
+    --element-border-color: #20242f;
+    --border-color: #2b3243;
+}
+
+html {
+    font-size: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-color);
+    background: var(--bg-primary-color);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+h1 {
+    font-size: 1.7rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.8rem;
+}
+
+h6 {
+    font-size: 0.7rem;
+}
+
+@media screen and (min-width:768px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+    h6 {
+        font-size: 0.8rem;
+    }
+}
+
+body.scrolling {
+    overflow-y: hidden;
+}
+
+a,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: var(--text-color-grey);
+}
+
+img,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

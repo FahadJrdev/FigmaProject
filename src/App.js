@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Navigations from './components/Navigation';
+import Navigations from './sectionBlock/Navigation';
 function App() {
   return (
     <div className="App">

@@ -1,0 +1,30 @@
+.button {
+    padding: 10px 45px;
+    border-radius: 30px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.buttonwitharrow {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.buttonwitharrow svg {
+    margin-right: 5px;
+    display: inline-block;
+}
+
+button:hover {
+    box-shadow: var(--box-shadow);
+}
+
+button:active {
+    box-shadow: none;
+}

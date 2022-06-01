@@ -9,6 +9,7 @@ import Reports from '../../pages/Reports';
 import Configuration from '../../pages/Configuration';
 import Help from '../../pages/Help';
 import Navbar from './Navbar';
+import InvestorsDetail from '../../pages/InvestorsDetail';
 function Navigations(){
   return (
     <>
@@ -17,12 +18,13 @@ function Navigations(){
         <Routes>
           <Route path='/' exact element = {<Dashboard />}/>
           <Route path='/Investors' exact element = {<Investors />}/>
-          <Route path='/Projects' exact element = {<Projects />}/>
+          <Route path='/InvestorsDetail' exact element = {<Projects />}/>
           <Route path='/Revenues' exact element = {<Revenues />}/>
           <Route path='/Expenses' exact element = {<Expenses />}/>
           <Route path='/Reports' exact element = {<Reports />}/>
           <Route path='/Configuration' exact element = {<Configuration />}/>
           <Route path='/Help' exact element = {<Help />}/>
+          <Route path='/Projects' exact element = {<InvestorsDetail />}/>
         </Routes>
       </BrowserRouter>
     </>

@@ -3,6 +3,7 @@
 .cards.grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(127px, 1fr));
     gap: 30px;
 }
 

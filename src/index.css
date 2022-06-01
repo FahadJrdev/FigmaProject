@@ -11,7 +11,10 @@
     --background-hover: rgba(69, 163, 255, 0.1);
     --color-hover: #FF7A17;
     --background-body: #FFFFFF;
+    --bg-primary-color: #FFFFFF;
     --title-font-color: #2f384e;
+    --bg-secondary-color: #FDFDFF;
+    --border-secondary-color: #EBEBEB;
     --drop-box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
     --box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.07), -4px -4px 13px #fff, 6px 6px 30px rgba(0, 0, 0, 0.05);
     --box-shadow-inset: -4px -4px 16px rgba(255, 255, 255, 0.25), 4px 4px 8px rgba(66, 83, 107, 0.09), inset 0 -4px 14px #fff, inset 0 2px 6px rgba(66, 83, 107, 0.22);
@@ -49,7 +52,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
-    color: var(--text-color);
+    color: var(--text-primary);
     background: var(--bg-primary-color);
 }
 

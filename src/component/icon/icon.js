@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './icon.css';
 export const HandShake = () => {
   return (
     <svg className='handshake custom-icon' width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,5 +78,13 @@ export const Search = () => {
       <path d="M10 9.69243L7.825 7.70953M9 5.13403C9 7.14806 7.20914 8.78075 5 8.78075C2.79086 8.78075 1 7.14806 1 5.13403C1 3.12 2.79086 1.4873 5 1.4873C7.20914 1.4873 9 3.12 9 5.13403Z" stroke="#979797" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 
+  )
+}
+
+export const ArrowUp = ({rotate}) => {
+  return(
+    <svg className={`arrow-up-icon ${rotate}`} width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1.01563 5.77674L5.63518 1.51245M5.63518 1.51245L10.2548 5.77674M5.63518 1.51245L5.63518 11.5916" stroke="#979797" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
   )
 }

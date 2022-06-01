@@ -15,14 +15,14 @@
     width: 294px;
     height: 32px;
     border-radius: 5px;
-    border: 1px solid #EBEBEB;
-    background-color: #FDFDFF;
+    border: 1px solid var(--border-secondary-color);
+    background-color: var(--bg-secondary-color);
     color: var(--text-primary);
     padding-left: 30px;
 }
 
 .searchbox::-webkit-input-placeholder {
-    color: #EBEBEB;
+    color: var(--border-secondary-color);
     display: inline-block;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -31,7 +31,7 @@
 }
 
 .searchbox::-moz-input-placeholder {
-    color: #EBEBEB;
+    color: var(--border-secondary-color);
     display: inline-block;
     padding-left: 10px;
     text-rendering: auto;
@@ -41,7 +41,7 @@
 }
 
 .searchbox::-ms-input-placeholder {
-    color: #EBEBEB;
+    color: var(--border-secondary-color);
     display: inline-block;
     padding-left: 10px;
     text-rendering: auto;

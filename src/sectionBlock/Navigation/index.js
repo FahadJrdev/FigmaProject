@@ -9,13 +9,11 @@ import Reports from '../../pages/Reports';
 import Configuration from '../../pages/Configuration';
 import Help from '../../pages/Help';
 import Navbar from './Navbar';
-import Header from './Header';
 function Navigations(){
   return (
     <>
       <BrowserRouter>
         <Navbar />
-        <Header />
         <Routes>
           <Route path='/' exact element = {<Dashboard />}/>
           <Route path='/Investors' exact element = {<Investors />}/>
@@ -24,7 +22,7 @@ function Navigations(){
           <Route path='/Expenses' exact element = {<Expenses />}/>
           <Route path='/Reports' exact element = {<Reports />}/>
           <Route path='/Configuration' exact element = {<Configuration />}/>
-          <Route path='/Help' exact element = {<Help />}/>\
+          <Route path='/Help' exact element = {<Help />}/>
         </Routes>
       </BrowserRouter>
     </>

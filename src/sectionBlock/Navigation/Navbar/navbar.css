@@ -181,11 +181,19 @@
     height: auto;
 }
 
+.sidebar .header-menu-item.active .custom-icon path {
+    fill: var(--color-hover);
+}
+
 .sidebar .header-menu-item:hover .custom-icon path {
     fill: var(--color-hover);
 }
 
 .sidebar .header-menu-item:hover .configuration path {
+    stroke: var(--color-hover);
+}
+
+.sidebar .header-menu-item.active .configuration path {
     stroke: var(--color-hover);
 }
 

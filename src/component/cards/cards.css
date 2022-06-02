@@ -90,12 +90,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100px;
+    overflow-x: hidden;
 }
 
 .investorCard .Ltds.show .Ltd {
     display: flex;
     width: 250px;
     box-sizing: border-box;
+    margin-bottom: 7px;
 }
 
 .investorCard .Ltds.show .Ltd .Ltd-bar {
@@ -105,35 +108,21 @@
     margin-right: 10px;
 }
 
-.investorCard .Ltds.show .Ltd .Ltd-bar.primary-color {
+.investorCard .Ltds.show .Ltd.color1 .Ltd-bar {
     background-color: var(--primary-color);
 }
 
-.investorCard .Ltds.show .Ltd .Ltd-bar.secondary-color {
+.investorCard .Ltds.show .Ltd.color2 .Ltd-bar {
     background-color: var(--secondary-color);
 }
 
-.investorCard .Ltds.show .Ltd .Ltd-bar.tartiary-color {
+.investorCard .Ltds.show .Ltd.color3 .Ltd-bar {
     background-color: var(--tartiary-color);
 }
 
 .investorCard .Ltds.show .Ltd .Ltd-details {
     width: 100%;
     position: relative;
-}
-
-.investorCard .Ltds.show .Ltd .Ltd-details::after {
-    width: 7px;
-    height: 35px;
-    border-radius: 8px;
-    background-color: var(--text-hidden);
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.investorCard .Ltds.show .Ltd .Ltd-details.active::after {
-    content: '';
 }
 
 .investorCard .Ltds.show .Ltd .Ltd-details .text {
@@ -146,14 +135,14 @@
     font-size: 14px;
 }
 
-.investorCard .Ltds.show .Ltd .Ltd-details .number.primary-color {
+.investorCard .Ltds.show .Ltd.color1 .Ltd-details .number {
     color: var(--primary-color);
 }
 
-.investorCard .Ltds.show .Ltd .Ltd-details .number.secondary-color {
+.investorCard .Ltds.show .Ltd.color2 .Ltd-details .number {
     color: var(--secondary-color);
 }
 
-.investorCard .Ltds.show .Ltd .Ltd-details .number.tartiary-color {
+.investorCard .Ltds.show .Ltd.color3 .Ltd-details .number {
     color: var(--tartiary-color);
 }

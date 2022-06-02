@@ -2,6 +2,7 @@ import React from 'react';
 import './pageStyle.css';
 import { InvestorDetailCard } from '../component/cards';
 import Header from '../sectionBlock/Header';
+import { LtdInfo } from '../component/cards/cardInfo';
 
 const InvestorsDetail = () => {
   return (
@@ -23,12 +24,7 @@ const InvestorsDetail = () => {
             color={`primary-color`}  
             title={[`Total investment amount`]} 
             text={`21,124,628.48`} 
-            Ltd1Color={`secondary-color`} 
-            Ltd1Text={`Muncher Inc.`} 
-            Ltd1Number={`299,992.71`}
-            Ltd2Color={`primary-color`} 
-            Ltd2Text={`Muncher Brazil LTDA`} 
-            Ltd2Number={`133,486.10`} 
+            Ltd ={LtdInfo}
           />
         </div>
       </div>

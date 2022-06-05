@@ -8,7 +8,7 @@ const Header = ({displayArrowBtn, textArrowBtn, colorArrowBtn, pageTitle, pageDe
     <header>
       <div className="first-part">
         <div className={`display ${displayArrowBtn}`}>
-          <ButtonWithArrow text={`${textArrowBtn}`} background={`${colorArrowBtn}`}  />
+          <ButtonWithArrow text={`${textArrowBtn}`} background={`${colorArrowBtn}`} types={`button`}  />
         </div>
         <div className="page-name">
           <p className='title'>{pageTitle}</p>
@@ -17,7 +17,7 @@ const Header = ({displayArrowBtn, textArrowBtn, colorArrowBtn, pageTitle, pageDe
       </div>
       <div className="second-part">
         <div className={`display ${displayBtn}`}>
-          <Button text={`${textBtn}`} background={`${colorBtn}`}  />
+          <Button text={`${textBtn}`} background={`${colorBtn}`}  types={`button`} />
         </div>
         <div className={`display ${displaySearch}`}>
           <Searchbox />

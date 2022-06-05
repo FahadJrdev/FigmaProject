@@ -1,8 +1,11 @@
 import React from 'react';
+import Navbar from '../sectionBlock/Navigation/Navbar';
 
 const Configuration = () => {
   return (
-    <div className='main'>Configuration</div>
+    <>
+      <Navbar />
+    </>
   )
 }
 

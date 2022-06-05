@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowUp } from '../icon/icon';
 import './cards.css';
+import { Expense } from '../icon/icon';
 
 export const InvestorCard = ({color,title,text,miniText,rotateArrowIcon, miniDisplay}) => {
   return (
@@ -41,6 +42,15 @@ export const InvestorDetailCard = ({color,title,text,Ltd}) => {
           })
         }
       </div>
+    </div>
+  )
+};
+
+export const DocumentCard = ({text}) => {
+  return(
+    <div className="document">
+      <Expense />
+      <p>{text}</p>
     </div>
   )
 };

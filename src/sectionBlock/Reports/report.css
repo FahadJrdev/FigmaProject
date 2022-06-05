@@ -1,0 +1,14 @@
+.reports {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+}
+
+.reports .document {
+    margin-right: 30px;
+    text-align: center;
+}
+
+.reports svg path {
+    fill: var(--tartiary-color);
+}

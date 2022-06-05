@@ -1,8 +1,11 @@
 import React from 'react';
+import Navbar from '../sectionBlock/Navigation/Navbar';
 
 const Help = () => {
   return (
-    <div className='main'>Help</div>
+    <>
+      <Navbar />
+    </>
   )
 }
 

@@ -74,7 +74,7 @@ export const Help = () => {
 
 export const Search = () => {
   return(
-    <svg className='search-icon' width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className='search-icon custom-icon' width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M10 9.69243L7.825 7.70953M9 5.13403C9 7.14806 7.20914 8.78075 5 8.78075C2.79086 8.78075 1 7.14806 1 5.13403C1 3.12 2.79086 1.4873 5 1.4873C7.20914 1.4873 9 3.12 9 5.13403Z" stroke="#979797" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 
@@ -83,8 +83,27 @@ export const Search = () => {
 
 export const ArrowUp = ({rotate}) => {
   return(
-    <svg className={`arrow-up-icon ${rotate}`} width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={`arrow-up-icon custom-icon ${rotate}`} width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M1.01563 5.77674L5.63518 1.51245M5.63518 1.51245L10.2548 5.77674M5.63518 1.51245L5.63518 11.5916" stroke="#979797" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
+  )
+}
+
+export const Download = () => {
+  return(
+    <svg className='download-icon custom-icon' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 12V19H5V12H3V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V12H19ZM13 12.67L15.59 10.09L17 11.5L12 16.5L7 11.5L8.41 10.09L11 12.67V3H13V12.67Z" fill="#C7C7C7"/>
+    </svg>
+
+  )
+}
+
+export const Print = () => {
+  return(
+    <svg className='print-icon custom-icon' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 8H18V3H6V8H5C3.34 8 2 9.34 2 11V17H6V21H18V17H22V11C22 9.34 20.66 8 19 8ZM8 5H16V8H8V5ZM16 17V19H8V15H16V17ZM18 15V13H6V15H4V11C4 10.45 4.45 10 5 10H19C19.55 10 20 10.45 20 11V15H18Z" fill="#C7C7C7"/>
+      <path d="M18 12.5C18.5523 12.5 19 12.0523 19 11.5C19 10.9477 18.5523 10.5 18 10.5C17.4477 10.5 17 10.9477 17 11.5C17 12.0523 17.4477 12.5 18 12.5Z" fill="#C7C7C7"/>
+    </svg>
+
   )
 }

@@ -6,6 +6,5 @@
     transition: margin-left .2s ease;
     background-color: var(--background-body);
     color: var(--text-primary);
-    height: 100vh;
     padding: 10px 20px;
 }

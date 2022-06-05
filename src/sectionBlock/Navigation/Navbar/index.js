@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <aside className="sidebar">
       <div className="logo">
-        <Link to="/">
+        <Link to="/Dashboard">
           <img className="logo-img" src="img/navbar-icon/logo.png" alt="MGM Innova Group" />
         </Link>
         <div className="arena">
@@ -25,7 +25,7 @@ function Navbar() {
       </div>
       <div className="profile-notification">
         <div className="profile">
-          <Link to="/">
+          <Link to="/Profile">
             <img src="img/navbar-icon/profile.svg" alt="profile" />
           </Link>
           <div className="profile-info">
@@ -35,7 +35,7 @@ function Navbar() {
           </div>
         </div>
         <div className="notification">
-          <Link to="/">
+          <Link to="/Notification">
             <img src="img/navbar-icon/bell.svg" alt="notification" />
           </Link>
         </div>
@@ -43,7 +43,7 @@ function Navbar() {
       <div className="sidebar-wrapper">
         <div className="sidebar-component">
           <ul className="header-menu">
-            <Link className={`header-menu-item ${getActiveColor('/')}`} to='/'><MdOutlineDashboardCustomize /><p>Dashboard</p></Link>
+            <Link className={`header-menu-item ${getActiveColor('/Dashboard')}`} to='/Dashboard'><MdOutlineDashboardCustomize /><p>Dashboard</p></Link>
             <Link className={`header-menu-item ${getActiveColor('/Investors')}`} to='/Investors'><HandShake /><p>Investors</p></Link>
             <Link className={`header-menu-item ${getActiveColor('/Projects')}`} to='/Projects'><Project /><p>Projects</p></Link>
             <Link className={`header-menu-item ${getActiveColor('/Revenues')}`} to='/Revenues'><Revenue /><p>Revenues</p></Link>

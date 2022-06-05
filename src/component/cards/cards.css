@@ -146,3 +146,25 @@
 .investorCard .Ltds.show .Ltd.color3 .Ltd-details .number {
     color: var(--tartiary-color);
 }
+
+.document {
+    width: 123px;
+    height: 119px;
+    border-radius: 19px;
+    box-shadow: var(--card-box-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.document svg {
+    width: 50%;
+}
+
+.document p {
+    color: var(--text-low-dark);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 127%;
+}

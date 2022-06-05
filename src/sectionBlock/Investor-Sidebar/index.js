@@ -37,12 +37,12 @@ const InvestorCustomizer = ({title}) => {
     dispatch({field: e.target.name, value: e.target.value})
   }
 
-  let currentState = [];
-  for (let value in initialState){
-      currentState.push(value);
-  } 
+//   let currentState = [];
+//   for (let value in initialState){
+//       currentState.push(value);
+//   } 
 
-  const {currentState.join()} = state;
+//   const {currentState.join()} = state;
   
 
   const {Nit, Company_name, Date_of_constitution, City_of_constitution, Constitution_Department, Country_of_Constitution, Economic_activity, Company_object, Sociodemographic_Department, Sociodemographic_Country, Address_main_office, Sociodemographic_City, Telephone, Email, Permit_description_1, Permit_description_2, Permit_description_3} = state;
